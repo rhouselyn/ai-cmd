@@ -1,6 +1,6 @@
 # AI-CMD: Integrate GPT with Windows Terminal
 
-**AI-CMD** is an innovative project designed to seamlessly integrate GPT capabilities with the Windows terminal, enabling users to directly ask questions and generate command-line code using natural language. By leveraging an OpenAI proxy, AI-CMD offers accessibility **without the need for a VPN**, simplifying the process of tackling terminal-related queries and automating command generation.
+**AI-CMD** is an innovative project designed to seamlessly integrate GPT capabilities with the Windows terminal, enabling users to directly `ask questions` and `generate command-line code` using natural language. By leveraging an OpenAI proxy, AI-CMD offers accessibility `without the need for a VPN`, simplifying the process of tackling terminal-related queries and automating command generation.
 
 ---
 ## Getting Started
