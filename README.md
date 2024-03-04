@@ -15,7 +15,7 @@
    python setup.py
    ```
 3. Add the project directory to your system's PATH environment variable:
-   - On Windows, search for "Edit the system environment variables" > Environment Variables > System Variables > PATH > Add the project path.
+   - As for how to find the PATH environment variable, refer to [this](https://support.esri.com/zh-cn/knowledge-base/edit-an-environment-variable-1462478594981-000002146)
 
 ### Configuration
 - In `config.py`, input your `api_key`.
@@ -24,9 +24,22 @@
 ## Usage
 
 ### Asking Questions
-- Use `ask` followed by your question in the terminal. AI-CMD will automatically fetch the context from the terminal, process the inquiry with GPT, and generate a response. If the response contains terminal commands, they are automatically extracted and copied to the clipboard. A brief screen flash indicates the use of a virtual keyboard for copying and processing, ensuring the clipboard's content is promptly cleared afterwards.
+- Use `ask` followed by your question in the terminal. AI-CMD will automatically fetch the context from the terminal, process the inquiry with GPT, and generate a response.
+- If the response contains terminal commands, they are automatically extracted and copied to the clipboard so that you can paste directly to the terminal.
+- You don't need to worry about consuming too much tocken, it will only intercept instructions from back to front until it exceeds 500 words.
+- A brief screen flash indicates the use of a virtual keyboard for copying and processing, ensuring the clipboard's content is promptly cleared afterwards.
 
 ### Generating Commands
-- Typing `gen` followed by a directive in the terminal prompts GPT to translate it into a command, which is then copied to the clipboard. If GPT is unsure about the task, it responds with "UNKNOWN: please try another instruction." For potentially hazardous operations, it adds a cautionary note: "CAUTION: This command is dangerous!"
+- Typing `gen` followed by a directive in the terminal prompts GPT to translate it into a command, which is then copied to the clipboard.
+- Connect multiple row operations using &&
+- If GPT is unsure about the task, it responds with
+  > UNKNOWN: please try another instruction.
+- For potentially hazardous operations, it adds a cautionary note:
+  > CAUTION: This command is dangerous!
 
-This project draws inspiration from the [cli-gpt](https://github.com/MagicCube/cli-gpt?tab=readme-ov-file) project, adopting its approach to prompt design for effective and intuitive user interactions. Enjoy a smoother, more interactive terminal experience with AI-CMD, where powerful GPT integration meets the convenience of command-line operations.
+### error handling
+- If the api speed limit is reached, the program automatically retries until it is lifted。
+- Run time more than 15 seconds automatically exit the program
+
+This project draws inspiration from the [cli-gpt](https://github.com/MagicCube/cli-gpt?tab=readme-ov-file) project, adopting its approach to prompt design for effective and intuitive user interactions. 
+Please Enjoy a smoother, more interactive terminal experience with AI-CMD, where powerful GPT integration meets the convenience of command-line operations.
