@@ -25,24 +25,26 @@
 
 ### Asking Questions
 - Use `ask` followed by your question in the terminal. AI-CMD will automatically fetch the context from the terminal, process the inquiry with GPT, and generate a response.
-  >![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/07c22102-83b9-4b20-b084-b17f963d7351)
+   ![image](imgs/309721819-07c22102-83b9-4b20-b084-b17f963d7351.png)
 - You don't need to worry about consuming too much tocken, it will only intercept instructions from back to front until it exceeds 500 words.
 - A brief screen flash indicates the use of a virtual keyboard for copying and processing, ensuring the clipboard's content is promptly cleared afterwards.
 - If the response contains terminal commands, they are automatically extracted and copied to the clipboard so that you can paste directly to the terminal.
-  >![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/29360a4c-0ffa-4a63-9522-bb47b91b2ed0)
+   ![image](imgs/309722418-29360a4c-0ffa-4a63-9522-bb47b91b2ed0.png)
 
 ### Generating Commands
 - Typing `gen` followed by a directive in the terminal prompts GPT to translate it into a command, which is then copied to the clipboard.
 - Connect multiple row operations using && or &
-  >![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/60b89883-3303-4fdf-b1c2-024e901f5eb6)
+  ![image](imgs/309721211-60b89883-3303-4fdf-b1c2-024e901f5eb6.png)
 
 - If GPT is unsure about the task, it responds with
   > UNKNOWN: please try another instruction.
-  > ![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/dc76c452-4e89-4250-a516-f08bcf8e1f4e)
+
+  ![image](imgs/309720831-dc76c452-4e89-4250-a516-f08bcf8e1f4e.png)
 
 - For potentially hazardous operations, it adds a cautionary note:
   > CAUTION: This command is dangerous!
-  > ![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/40905fbe-3369-40e8-9962-9d8df8684ff8)
+
+  ![image](imgs/309721026-40905fbe-3369-40e8-9962-9d8df8684ff8.png)
 
 ### error handling
 - If the api speed limit is reached, the program automatically retries until it is lifted。

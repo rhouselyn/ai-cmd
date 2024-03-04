@@ -11,7 +11,7 @@ def form_messages():
 
 
 def main():
-    reply = generate.ask_gpt(form_messages(), 0.4)
+    reply = generate.ask_gpt(form_messages(), 0.2)
     ui.polish_reply(reply)
 
 
