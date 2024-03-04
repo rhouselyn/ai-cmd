@@ -25,7 +25,7 @@
 ## Usage & Feature
 
 ### 1. Generating Commands
-- :running: Typing `gen` followed by a directive in the terminal prompts GPT to translate it into a command, which is then copied to the clipboard.
+- :running: Typing `gen` followed by a directive in the terminal prompts GPT to translate it into a command, which is then copied to the clipboard automatically.
 - :couple_with_heart: Connect multiple row operations using && or &
   > ![image](imgs/309721211-60b89883-3303-4fdf-b1c2-024e901f5eb6.png)
 
@@ -41,7 +41,7 @@
 - :boot: Use `ask` followed by your question in the terminal. AI-CMD will automatically fetch the context from the terminal, process the inquiry with GPT, and generate a response.
    > ![image](imgs/309721819-07c22102-83b9-4b20-b084-b17f963d7351.png)
 - :hamburger: You don't need to worry about consuming too much tocken, it will only intercept instructions from back to front until it exceeds 1000 words.
-- :airplane: A brief screen flash indicates the use of a virtual keyboard for copying and processing, ensuring the clipboard's content is promptly cleared afterwards.
+- :airplane: Because of Windows don't provide any api for aproach to acquire history output in current dialog, a brief screen flash indicates the use of a virtual keyboard for copying and processing, ensuring the clipboard's content is promptly cleared afterwards.
 - :stuck_out_tongue_closed_eyes: If the response contains terminal commands, they are automatically extracted and copied to the clipboard so that you can paste directly to the terminal.
    > ![image](imgs/309722418-29360a4c-0ffa-4a63-9522-bb47b91b2ed0.png)
    
