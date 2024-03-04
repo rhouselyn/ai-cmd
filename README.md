@@ -14,7 +14,7 @@
    cd ai-cmd
    python setup.py
    ```
-3. Add the project directory to your system's PATH environment variable:
+3. Add the project directory to your system's PATH environment variable (or copy the dictionary in output of setup.py):
    - As for how to find the PATH environment variable, refer to [this](https://support.esri.com/zh-cn/knowledge-base/edit-an-environment-variable-1462478594981-000002146)
 
 ### Configuration
