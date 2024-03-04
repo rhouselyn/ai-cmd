@@ -25,21 +25,29 @@
 
 ### Asking Questions
 - Use `ask` followed by your question in the terminal. AI-CMD will automatically fetch the context from the terminal, process the inquiry with GPT, and generate a response.
-- If the response contains terminal commands, they are automatically extracted and copied to the clipboard so that you can paste directly to the terminal.
+  >![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/07c22102-83b9-4b20-b084-b17f963d7351)
 - You don't need to worry about consuming too much tocken, it will only intercept instructions from back to front until it exceeds 500 words.
 - A brief screen flash indicates the use of a virtual keyboard for copying and processing, ensuring the clipboard's content is promptly cleared afterwards.
+- If the response contains terminal commands, they are automatically extracted and copied to the clipboard so that you can paste directly to the terminal.
+  >![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/29360a4c-0ffa-4a63-9522-bb47b91b2ed0)
 
 ### Generating Commands
 - Typing `gen` followed by a directive in the terminal prompts GPT to translate it into a command, which is then copied to the clipboard.
-- Connect multiple row operations using &&
+- Connect multiple row operations using && or &
+  >![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/60b89883-3303-4fdf-b1c2-024e901f5eb6)
+
 - If GPT is unsure about the task, it responds with
   > UNKNOWN: please try another instruction.
+  > ![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/dc76c452-4e89-4250-a516-f08bcf8e1f4e)
+
 - For potentially hazardous operations, it adds a cautionary note:
   > CAUTION: This command is dangerous!
+  > ![image](https://github.com/rhouselyn/ai-cmd/assets/125283997/40905fbe-3369-40e8-9962-9d8df8684ff8)
 
 ### error handling
 - If the api speed limit is reached, the program automatically retries until it is lifted。
 - Run time more than 15 seconds automatically exit the program
 
 This project draws inspiration from the [cli-gpt](https://github.com/MagicCube/cli-gpt?tab=readme-ov-file) project, adopting its approach to prompt design for effective and intuitive user interactions. 
+The document is basically written by chatGPT4.
 Please Enjoy a smoother, more interactive terminal experience with AI-CMD, where powerful GPT integration meets the convenience of command-line operations.
