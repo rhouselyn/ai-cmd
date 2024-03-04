@@ -40,7 +40,7 @@
 ### 2. Asking Questions
 - Use `ask` followed by your question in the terminal. AI-CMD will automatically fetch the context from the terminal, process the inquiry with GPT, and generate a response.
    > ![image](imgs/309721819-07c22102-83b9-4b20-b084-b17f963d7351.png)
-- You don't need to worry about consuming too much tocken, it will only intercept instructions from back to front until it exceeds 500 words.
+- You don't need to worry about consuming too much tocken, it will only intercept instructions from back to front until it exceeds 1000 words.
 - A brief screen flash indicates the use of a virtual keyboard for copying and processing, ensuring the clipboard's content is promptly cleared afterwards.
 - If the response contains terminal commands, they are automatically extracted and copied to the clipboard so that you can paste directly to the terminal.
    > ![image](imgs/309722418-29360a4c-0ffa-4a63-9522-bb47b91b2ed0.png)
