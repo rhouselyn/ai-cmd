@@ -48,6 +48,8 @@
 - If the api speed limit is reached, the program automatically retries until it is lifted。
 - Run time more than 15 seconds automatically exit the program
 
-This project draws inspiration from the [cli-gpt](https://github.com/MagicCube/cli-gpt?tab=readme-ov-file) project, adopting its approach to prompt design for effective and intuitive user interactions. 
-The document is basically written by chatGPT4.
+### Credits
+- This project draws inspiration from the [cli-gpt](https://github.com/MagicCube/cli-gpt?tab=readme-ov-file) project, adopting its approach to prompt design for effective and intuitive user interactions. 
+- The document is basically written by chatGPT4.
+  
 Please Enjoy a smoother, more interactive terminal experience with AI-CMD, where powerful GPT integration meets the convenience of command-line operations.
