@@ -26,7 +26,7 @@ def display_code_blocks(reply):
     if code_blocks:
         code = '\n'.join(code_blocks).strip()
         pyperclip.copy(code)
-        print("\n```copied\n", code, "\n```")
+        print("\n```copied```\n", code, "\n````````````")
 
 
 def polish_reply(reply):
