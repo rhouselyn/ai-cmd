@@ -29,6 +29,7 @@
 ## Usage & Feature
 
 ### 1. Generating Commands
+It provide a simple process for generating commands using natural language. It doesn't provide much flexibility like `ask`, but it's more convenient and faster.
 - :running: Typing `gen` followed by a directive in the terminal prompts GPT to translate it into a command, which is then copied to the clipboard automatically.
 - :couple_with_heart: Connect multiple row operations using && or &
   > ![image](imgs/309721211-60b89883-3303-4fdf-b1c2-024e901f5eb6.png)
@@ -42,6 +43,7 @@
   ![image](imgs/309721026-40905fbe-3369-40e8-9962-9d8df8684ff8.png)
   
 ### 2. Asking Questions
+unlike `gen`, `ask` is used to ask questions with dialog context and get more responses. 
 - :boot: Use `ask` followed by your question in the terminal. AI-CMD will automatically fetch the context from the terminal, process the inquiry with GPT, and generate a response.
    > ![image](imgs/309721819-07c22102-83b9-4b20-b084-b17f963d7351.png)
 - :hamburger: You don't need to worry about consuming too much tocken, it will only intercept instructions from back to front until it exceeds 1000 words.
