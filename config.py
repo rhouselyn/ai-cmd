@@ -1,7 +1,7 @@
-api_key = "your-api-key"
+api_key = "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"
 
 
-model = "gpt-3.5-turbo"
+model = "gpt-3.5-turbo-0125"
 # gpt-3.5-turbo
 # gpt-3.5-turbo-0125
 # gpt-4-0125-preview
