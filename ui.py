@@ -30,10 +30,6 @@ def display_code_blocks(reply):
 
 
 def polish_reply(reply):
-    if "UNKNOWN" in reply:
-        print("UNKNOWN: please try another instruction")
-        return
-
     polished_reply = ""
     for content in reply.split('\n'):
         if content.startswith('>'):
