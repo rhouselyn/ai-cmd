@@ -47,7 +47,7 @@
 - :hamburger: You don't need to worry about consuming too much tocken, it will only intercept instructions from back to front until it exceeds 1000 words.
 - :airplane: Because of Windows don't provide any api for aproach to acquire history output in current dialog, a brief screen flash indicates the use of a virtual keyboard for copying and processing, ensuring the clipboard's content is promptly cleared afterwards.
 - :stuck_out_tongue_closed_eyes: If the response contains terminal commands, they are automatically extracted and copied to the clipboard so that you can paste directly to the terminal.
-   > ![image](imgs/309722418-29360a4c-0ffa-4a63-9522-bb47b91b2ed0.png)
+   > ![image](imgs/微信图片_20240305110933.png)
    
 ### error handling
 - :o: If the api speed limit is reached, the program automatically retries until it is lifted。
