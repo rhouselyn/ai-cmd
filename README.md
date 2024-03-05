@@ -10,12 +10,16 @@
    ```
    git clone https://github.com/rhouselyn/ai-cmd
    ```
-2. Navigate to the project directory and run the setup:
+2. Navigate to the project directory and install the required packages:
    ```
    cd ai-cmd
-   python setup.py
+   pip install -r requirements.txt
    ```
-3. Add the project directory to your system's PATH environment variable (or copy the dictionary in output of setup.py):
+3. run the setup:
+    ```
+    python setup.py
+    ```
+4. Add the project directory to your system's PATH environment variable (or copy the dictionary in output of setup.py):
    - As for how to find the PATH environment variable, refer to [this](https://support.esri.com/zh-cn/knowledge-base/edit-an-environment-variable-1462478594981-000002146)
 
 ### Configuration

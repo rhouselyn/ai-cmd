@@ -6,7 +6,7 @@ import config
 import ui
 
 
-def ask_gpt(messages, temperature=0.7):
+def ask_gpt(messages, temperature=0.5):
     stop_event = threading.Event()
     thread = threading.Thread(target=ui.generate_dots, args=(stop_event,))
     thread.start()
